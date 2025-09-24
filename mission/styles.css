@@ -49,3 +49,11 @@ footer{
     display: block;
     margin: auto;
 }
+
+.dark{
+    background-color: #333;
+    color: white;
+}
+.dark #subtitle{
+    color: #A0D4ED
+}
