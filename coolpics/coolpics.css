@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+:root {
+ --primary-color: #52489c;
+ --secondary-color: #EBEBEB;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Mooli", san-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-light);
+  font-size: 1.2em;
+  margin: 0%;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+header * {
+    margin: auto;
+    
+}
+.navList{
+    list-style-type: none;
+    width: 100px;
+    padding: 0; 
+    margin: auto;  
+    
+
+}
+h1{
+    font-family: var(--secondary-font);
+}
+
+.navList li{
+    
+    
+    margin: 5px auto; 
+   
+}
+
+button{
+    margin-top: 10px;
+    background: none; 
+    color: inherit; 
+    border: none;
+    padding: 0;
+    font: inherit; 
+    cursor: pointer; 
+    outline: none; 
+    appearance: none;
+
+    font-size: 25px;
+}
+
+main{
+    background-color: var(--secondary-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    color: var(--text-dark);
+    
+}
+
+h2 {
+    font-family: var(--secondary-font);
+}
+
+a{
+    color: var(--text-light)
+}
+
+a:visited {
+  color: var(--accent-color);
+}
+img {
+	max-width: 100%;
+    
+    
+    border: white solid 5px;
+    box-shadow: 5px 5px 10px black;
+    padding: 0px;
+}
+footer{
+    background-color: var(--primary-color);
+    text-align: left; 
+}
+footer * {
+    margin-left: 20%;
+    padding: 10px;
+}
+
+.gallery{
+    padding-bottom: 15px;
+}
+
+
+@media screen and (min-width: 700px) {
+    
+    .navList{
+        display: none;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        
+        
+    }
+    figure{
+        max-width: 80%;
+        margin: auto;
+        padding: 0px;
+        
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    button{
+        display: none;
+    }
+
+    
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navList{
+        display: block;
+        display: inline;
+       
+    }
+    li{
+        display: inline;
+        padding: 35px;
+    }
+    .gallery{
+        width: 60%;
+        margin: auto;
+        gap: 30px;
+        
+    }
+    footer{
+        height: 100%;
+    
+    }
+    
+}
