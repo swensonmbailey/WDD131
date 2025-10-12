@@ -29,6 +29,7 @@ function openDialog(img) {
     dialog.show();
     let splitSrc = img.src.split('-');
     dialogImg.src = splitSrc[0] + '-full.jpeg';
+    dialogImg.alt = img.alt;
 
 }
 
