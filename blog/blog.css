@@ -143,3 +143,11 @@ main{
     margin-bottom: 10px;
     width: 60%;
 }
+
+footer{
+    border-top: solid var(--accent-color);
+}
+
+footer div{
+    margin: 10px 10%;
+}
