@@ -1,0 +1,30 @@
+
+body{
+    background-color: green;
+}
+
+#cardForm{
+    margin: auto;
+    width: 500px;
+    height: 290px;
+    position: relative;
+}
+
+#topFront{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+    width: 60%;
+
+}
+
+#backCard{
+    
+}
+
+.card-image{
+    margin: 0px;
+    width: 40px;
+    ite
+}
