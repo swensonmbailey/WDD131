@@ -1,0 +1,148 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #111d27;
+  --secondary-color: #a42212;
+  --accent1-color: #deb342;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Noto Serif", serif;;
+  --paragraph-font: Arial, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--secondary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--secondary-color);
+}
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  background-color: var(--primary-color);
+  font-size: 18px;
+  font-family: var(--paragraph-font);
+
+}
+
+header{
+    color: var(--accent1-color);
+}
+#banner{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+#logo{
+    height: 20vw;
+}
+
+h1{
+    color: var(--accent1-color);
+    text-align: center;
+    font-size: 9vw;
+    margin-bottom: 0px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    border: 1px solid var(--accent2-color);
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+nav ul li{
+    margin: 5px 20px;
+    font-size: 2vw;
+}
+nav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+main{
+    background-color: var(--secondary-color);
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    color: var(--accent2-color);
+}
+
+main h2{
+    color: var(--accent2-color);
+    text-decoration: underline;
+    font-size: 4vw;
+    -webkit-text-stroke: 1px var(--primary-color);
+    margin-bottom: 0px;
+}
+
+main a{
+    color: var(--primary-color);
+}
+
+#jesus{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 25vw;
+    max-height: 25vw;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    border: 1px solid var(--accent2-color);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+footer ul li{
+    margin: 5px 20px;
+    font-size: 2vw;
+}
+footer a{
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.current_page{
+    background-color: var(--secondary-color);
+}
+
+

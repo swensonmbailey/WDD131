@@ -1,0 +1,61 @@
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #111d27;
+  --secondary-color: #a42212;
+  --accent1-color: #deb342;
+  --accent2-color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    
+}
+
+
+#search{
+    width: 50%;
+    height: 25%;
+    align-self:last baseline;
+    
+}
+#filters{
+    grid-row: 2 span 1;
+    grid-column: 2 span 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+#videoContainer article{
+    background-color: var(--primary-color);
+    width: 80%;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+    
+}
+
+
+.video_title{
+    text-align: left;
+    color: var(--accent1-color);
+}
+
+.thumbnail{
+    width: 70%;
+}
+
+.description{
+    margin-top: 0px;
+    text-align: left;
+}
