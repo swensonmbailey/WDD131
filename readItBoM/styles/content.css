@@ -17,13 +17,13 @@ main{
 
 #search{
     width: 50%;
-    height: 25%;
+    height: 40px;
     align-self:last baseline;
     
 }
 #filters{
-    grid-row: 2 span 1;
-    grid-column: 2 span 1;
+    grid-row: 2;
+    grid-column: 1;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--primary-color);
@@ -54,8 +54,50 @@ main{
 .thumbnail{
     width: 70%;
 }
+.thumbnail:hover{
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+}
 
 .description{
     margin-top: 0px;
     text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    #search{
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    #filters{
+        flex-direction: row;
+        margin: auto;
+        width: initial;
+        height: 30px;
+
+    }
+
+    #videoContainer article{
+        margin: 10px auto;
+    }
+    .thumbnail{
+        width: 90%;
+    }
+    .description{
+        font-size: 15px;
+    }
+
 }

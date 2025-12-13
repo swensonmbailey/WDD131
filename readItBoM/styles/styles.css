@@ -109,7 +109,7 @@ main h2{
 }
 
 main a{
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 #jesus{
@@ -146,3 +146,60 @@ footer a:hover{
 }
 
 
+@media screen and (max-width: 700px) {
+    #banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #logo{
+        width: 25%;
+        height: 25%;
+        margin: auto;
+    }
+
+    h1{
+        margin-top: -15px;
+    }
+
+    header{
+        padding: 0px;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        border: 1px solid var(--accent2-color);
+        border-left: 0px;
+        border-right: 0px;
+        
+    }
+    nav ul li{
+        
+        font-size: 20px;
+    }
+    
+    main{
+        width: 96%;
+        margin: auto;
+    }
+    main h2{
+        font-size: xx-large;
+        -webkit-text-stroke: var(--accent2-color);
+    }
+    
+    #jesus{
+        max-width: 70vw;
+        max-height: 70vw;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul li{
+        font-size: 20px;
+    }
+}

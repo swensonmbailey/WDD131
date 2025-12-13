@@ -29,7 +29,7 @@ document.querySelectorAll('input[name="category"]').forEach(radio => {
         displayContent(videos);
     }else{
         filteredVideos = videos.filter(vid => vid.type == value);
-        displayContent(filteredVideos)
+        displayContent(filteredVideos);
     }
   });
 });
@@ -52,4 +52,27 @@ function displayContent(videoList){
 
 window.addEventListener("load", ()=>{
     displayContent(videos);
+});
+
+document.getElementById("search").addEventListener("input", (e)=>{
+    const videoContainer = document.getElementById("videoContainer");
+
+    let value = e.target.value.toLowerCase();
+    if(value == ""){
+        displayContent(videos);
+    }else{
+        filteredVideos = videos.filter(vid => vid.title.toLowerCase().includes(value) || vid.description.toLowerCase().includes(value));
+        if(filteredVideos.length < 1){
+            videoContainer.innerHTML = ``;
+            const video = document.createElement("article");
+            video.innerHTML = `
+            <h3 class="video_title">No videos found</h3>
+            <p class="description">No videos found using that key phrase.</p>
+            `;
+            videoContainer.appendChild(video);
+        }else{
+            displayContent(filteredVideos);
+        }
+    }
+    
 });
